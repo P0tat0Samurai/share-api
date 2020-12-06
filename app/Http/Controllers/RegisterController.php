@@ -18,7 +18,7 @@ class RegisterController extends Controller
             "email" => $request->email,
             "password" => $hashed_password,
             "profile" =>$request->profile,
-            "create_at" => $now,
+            "created_at" => $now,
             "updated_at" => $now,
         ];
         DB::table('users')->insert($param);
