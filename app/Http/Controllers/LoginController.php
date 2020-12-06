@@ -13,7 +13,7 @@ class LoginController extends Controller
         $items = DB::table('users')->where('email', $request->email)->first();
         if (Hash::check($request->password, $items->password)) {
             return response()->json(['auth' => true], 200);
-        }  else {
+        } else {
             return response()->json(['auth' => false], 200);
         }
     }

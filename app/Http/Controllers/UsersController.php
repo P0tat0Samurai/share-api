@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Database\Console\DbCommand;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
